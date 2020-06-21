@@ -1,0 +1,71 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/lobster */
+@import "http://fonts.fontstorage.com/import/lobster.css";
+/*
+	Lobster, 400
+*/
+
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/open-sans */
+@import "http://fonts.fontstorage.com/import/opensans.css";
+/*
+	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
+*/
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font: 1em/2em lobster, sans-serif;
+	background: #eee;
+	color: #3d3d3d;
+}
+
+.t3d{
+	width: 300px;
+	height: 400px;
+	margin: 50px auto;
+	perspective: 1200px;
+}
+
+.t3d:hover > .rotate{
+	transform: rotateY(180deg);
+}
+
+.rotate{
+	position: relative;
+	transform-style: preserve-3d;
+	transition: .5s;
+}
+/*Выберите шрифт, который говорит на вашем языке
+У вашего бизнеса есть индивидуальность, 
+поэтому используйте шрифт, который будет в ее духе. 
+Если вы организуете свадьбы, попробуйте Marck Script или Lobster. 
+Нужно что-то более строгое? Возьмите Open Sans или Helvetica. 
+Помните, что лучше использовать на сайте не более двух-трех шрифтов.*/
+.text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg);
+}
+
+.pd{
+	padding: 20px;
+}
+
+img{
+	vertical-align: middle;
+}
+
+img, .text{
+	border: 4px double #ccc;
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
